@@ -99,8 +99,8 @@ module.exports = {
     // }
     sepolia: {
       provider: () => new HDWalletProvider(
-        "frequent baby web slight filter enforce axis coil wedding night portion survey",
-        "https://blockchain.googleapis.com/v1/projects/charged-sum-352712/locations/us-central1/endpoints/ethereum-sepolia/rpc?key=AIzaSyBuErVPSADNipDIka3GErQg8vjy3bSmsXI" // Public Sepolia RPC
+        process.env.WALLET_KEY,
+        process.env.RPC_URL // Public Sepolia RPC
       ),
       network_id: 11155111,
       gas: 5500000,
